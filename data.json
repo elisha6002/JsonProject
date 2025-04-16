@@ -1,0 +1,82 @@
+[
+    {
+        "empName": "Ali",
+        "empEmail": "Ali@gmail.com ",
+        "empNumber": "+92256436566",
+        "empAdd": "karachi-Pakistan",
+        "empSalary": "50000"
+    },
+
+    {
+        "empName": "emi ",
+        "empEmail": "emi@gamil.com",
+        "empNumber": "+9245864864",
+        "empAdd": "lahore-Pakistan",
+        "empSalary": "400000"
+    },
+
+
+    {
+        "empName": "kuma",
+        "empEmail": "kuma@gmail.com",
+        "empNumber": "7619644134",
+        "empAdd": "jamu-Pakistan",
+        "empSalary": "30000"
+    },
+
+
+    {
+        "empName": "chima",
+        "empEmail": "chima@gmail.com",
+        "empNumber": "827935845254",
+        "empAdd": "patoki-Pakistan",
+        "empSalary": "80000"
+    },
+
+    {
+        "empName": "Aloo",
+        "empEmail": "Aloo@gmail.com",
+        "empNumber": "736494432",
+        "empAdd": "gulshan-Pakistan",
+        "empSalary": "60000"
+    },
+
+    {
+        "empName": "lala",
+        "empEmail": "lala@gmail.com",
+        "empNumber": "32644243",
+        "empAdd": "duda-Paistan",
+        "empSalary": "100000"
+    },
+    {
+        "empName": "omm",
+        "empEmail": "omm@gmail.com",
+        "empNumber": "2552545254",
+        "empAdd": "landi-Pakistan",
+        "empSalary": "400000"
+    },
+
+    {
+        "empName": "eli",
+        "empEmail": "eli@gmail.com",
+        "empNumber": "32764324243",
+        "empAdd": "rora-Pakistan",
+        "empSalary": "67000"
+    },
+
+    {
+        "empName": "moma",
+        "empEmail": "moma@gmail.com",
+        "empNumber": "25525454",
+        "empAdd": "aptech-Pakistan",
+        "empSalary": "500000"
+    },
+    {
+        "empName": "moiz",
+        "empEmail": "moiz@gmail.com",
+        "empNumber": "45534253252",
+        "empAdd": "DHA-Pakistan",
+        "empSalary": "300000"
+    }    
+]
+

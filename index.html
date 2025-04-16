@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employment Form</title>
+  <!-- Bootstrap 4 CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons (Optional) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #007bff;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+    .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      display: none;
+    }
+    .message.success {
+      color: green;
+    }
+    .message.error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Employee Registration Form</h3>
+          </div>
+          <div class="card-body">
+            <form id="empForm">
+              <div class="form-group">
+                <label for="empName">Employee Name</label>
+                <input type="text" class="form-control" id="empName" name="empName" required placeholder="Enter name">
+              </div>
+
+              <div class="form-group">
+                <label for="empEmail">Employee Email</label>
+                <input type="email" class="form-control" id="empEmail" name="empEmail" required placeholder="Enter email">
+              </div>
+
+              <div class="form-group">
+                <label for="empNumber">Employee Number</label>
+                <input type="text" class="form-control" id="empNumber" name="empNumber" required placeholder="Enter number">
+              </div>
+
+              <div class="form-group">
+                <label for="empAddress">Employee Address</label>
+                <textarea class="form-control" id="empAddress" name="empAddress" rows="3" required placeholder="Enter address"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="empSalary">Employee Salary</label>
+                <input type="number" class="form-control" id="empSalary" name="empSalary" required placeholder="Enter salary">
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+
+            <div id="message" class="message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS for form validation -->
+  <script>
+    document.getElementById('empForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      let empName = document.getElementById('empName').value;
+      let empEmail = document.getElementById('empEmail').value;
+      let empNumber = document.getElementById('empNumber').value;
+      let empAddress = document.getElementById('empAddress').value;
+      let empSalary = document.getElementById('empSalary').value;
+
+      if (empName && empEmail && empNumber && empAddress && empSalary) {
+        document.getElementById('message').classList.add('success');
+        document.getElementById('message').classList.remove('error');
+        document.getElementById('message').textContent = 'Form Submitted Successfully!';
+        document.getElementById('message').style.display = 'block';
+        document.getElementById('empForm').reset();
+      } else {
+        document.getElementById('message').classList.add('error');
+        document.getElementById('message').classList.remove('success');
+        document.getElementById('message').textContent = 'Please fill in all fields!';
+        document.getElementById('message').style.display = 'block';
+      }
+
+
+      console.log(empName)
+      console.log(empEmail)
+      console.log(empSalary)
+      console.log(empAddress)
+      console.log(empSalary)
+    });
+  </script>
+</body>
+</html>
